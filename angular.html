@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="javas.js"></script>
+</head>
+<body onload="ab()" ng-app="">
+    <div class="container">
+        <div class="header">
+            <center>
+                <h2>BMI Calculator</h2>
+            </center>
+        </div>
+        <form class="form">
+            <div class="form-control">
+                <b><label>Enter Your Height:</label></b>
+                <input onkeydown="aa()" ng-model="heightft" type="number" placeholder="Enter Feets"><br>
+                <input onkeydown="aa()" ng-model="heightin" type="number" placeholder="Enter Inches">
+                <span id="b" ng-bind="height=heightft+(heightin/100)"></span>
+            </div>
+            <div class="form-control">
+                <b><label>Enter Your Weight:</label></b>
+                <input onkeyup="aa()" ng-model="weight" type="text" placeholder="Enter Your Weight in KG">
+            </div>
+            <span id="a" ng-bind="heightinm= (height*30.48)/100"></span>
+            <div class="b" id="nnq">
+                <b><label id="nn1">Your BMI: </label> 
+                <span id="nn2" ng-bind="weight/(heightinm*heightinm)"></span><br></b>
+            </div>
+            <br>
+            <label class="lab" id="rate"></label>
+</body>
+
+</html>
